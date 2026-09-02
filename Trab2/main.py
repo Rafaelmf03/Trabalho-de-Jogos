@@ -109,7 +109,7 @@ while running:
             elif event.button == 3: # Clique Direito = Mover para a direita
                 if valid_move(current_piece, grid, offset_col=1):
                     current_piece.col += 1
-            elif event.button == 2: # Botão do Meio (Scroll) = Girar peça
+            elif event.button == 5: # Botão do Meio (Scroll) = Girar peça
                 current_piece.rotate()
                 if not valid_move(current_piece, grid):
                     for _ in range(3): current_piece.rotate()
